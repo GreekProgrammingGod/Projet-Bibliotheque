@@ -1,0 +1,35 @@
+<section class="body-login">
+    <div class="container">
+        <!-- Page connexion de compte contient référence Login REF -->
+        <form class="form" id="form-login" novalidate>
+            <h2 class="form-titre">Se Connecter</h2>
+            
+            <div class="form-input-group">
+                <input type="email" class="form-input" id="login-email" autofocus placeholder="Nom d'utilisateur / Adresse Courriel" required>
+                <div id="erreur-email-login" class="erreur"></div>
+            </div>
+
+            <div class="form-input-group">
+                <input type="password" class="form-input" id="login-password" autofocus placeholder="Mot de Passe" required minlength="5" maxlength="20">
+                <div id="erreur-password-login" class="erreur"></div>
+            </div>
+            
+            <button class="form-button" type="submit">Connexion</button>
+
+            <p class="form-text">
+                <a class="form-link" href="./inscription" id="linkLogin">Vous n'avez pas de compte? Inscrivez-vous</a>
+            </p>
+        </form>
+    </div>
+</section>
+
+<script type="module" src="../public/js/login.js"></script>
+<script type="module" src="../public/js/validationLogin.js"></script>
+
+
+<!-- RÉFÉRENCES LOGIN HTML CSS
+    Titre:  How to Build a Login & Sign Up Form with HTML, CSS & JavaScript - Web Development Tutorial
+    Author: dcode, (31 août 2020)
+    URL:    https://www.youtube.com/watch?v=3GsKEtBcGTk
+    Nom de référence:  "Login REF" 
+ -->

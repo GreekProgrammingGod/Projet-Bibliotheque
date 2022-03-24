@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <!-- font cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./../public/css/style.css">
+    <link rel="stylesheet" href="./../public/css/normalize.css">
+    <link rel="stylesheet" href="./../public/css/login.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titre">Bibliothèque</h1>
+        <nav class="navbar">
+            <a href="./index">Accueil</a>
+            <a href="./livres">Livres</a>
+            <a href="./emprunts">Emprunts</a>
+            <a href="./login">Connexion</a>           
+            <a href="./contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-user" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    </header>
+    <main>
+        <div class="formLogin"> 
+            <h1 class="titre-login">Connexion</h1>          
+            <form  id="formLogin">
+                <input type="text" id="loginConnexion" placeholder="Adresse courriel">
+                <div id="login-error" class="error"></div>
+                <input type="password" id="passeConnexion"  placeholder="Mot de passe">
+                <div id="passeConnexion-error" class="error"></div>
+                <input type="Submit"  value="Login">
+                <a href="./comptes">Vous n'avez pas encore de compte? S'inscrire maintenant</a>
+                <script>
+                    import { db, selectUtilisateur } from './sqlite3.js';
+
+                    db.query(selectionLivre, ['1'], function (err, result) {
+                        if (err) { throw err };
+                        console.log(result);
+                    });
+
+
+                    
+                </script>
+            </form>
+        </div>
+        
+    </main>
+    <footer >
+        <p >&copy;Bibliothèque | &copy;Collège La Cité</p>
+        <p >Développé par &lt;Bilan-Marc-Walid-Stevens-Hamza&gt;</p>
+    </footer>
+</body>
+<script src="./../main.js"></script>
+</html>
