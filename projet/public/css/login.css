@@ -1,0 +1,121 @@
+.titre-login{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 2.5rem;
+    font-size: 5rem;
+}
+
+.formLogin{
+    width: 320px;
+    height: 420px;
+    background: #000000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    
+}
+.formLogin{
+    width: 320px;
+    height: 420px;
+    background: #000000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: cal(50% -50px);
+}
+
+.formLogin p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.formLogin input{
+    width:  100%;
+    margin-bottom: 20px;
+}
+.formLogin  input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+     
+}
+.formLogin input[type="Submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.formLogin  input[type="Submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.formLogin a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.formLogin a :hover{
+    color:#ffc107 ;
+}
+input:invalid.active {
+    border: 2px solid #800;
+}
+
+.error {
+    align-self: start;
+    position: relative;
+    background-color: #800;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all ease .5s;
+}
+
+.error.active {
+    padding: .5rem 1rem;
+    transform: scaleY(1);
+}
+
+.error::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+    border-bottom: 1rem solid #2b1e1c;
+    border-left: 1rem solid #800;
+    transform-origin: top center;
+}
+footer {
+    margin: 0;
+    padding: 0.2em;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}

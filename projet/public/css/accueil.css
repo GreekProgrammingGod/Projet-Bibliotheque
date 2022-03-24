@@ -1,0 +1,110 @@
+/* Références Accueil*/
+.accueil{
+    margin-top: 5em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../img/biblio.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Références Accueil*/
+.accueil .content{
+    max-width: 60rem;
+}
+
+/* Références Accueil*/
+.accueil .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: rgb(255, 217, 0);
+    text-decoration: underline;
+}
+
+/* Références Accueil*/
+.accueil .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: white;
+    margin-bottom: 1em;
+}
+
+/* Références Accueil*/
+.btn{
+    font-size: 2rem;
+    background-color:#d3ad7f;
+    padding: 1rem;
+    color: #fff;
+    outline: 2px solid #010103;
+}
+
+.btn:hover{
+    background-color: #a0835f;
+    color: rgb(211, 211, 211);
+}
+footer {
+    margin: 0;
+    padding: 0.5em;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+body {
+font-family: Arial, Verdana, sans-serif;
+color: #111111;
+}
+table{
+    width: 600px;
+    margin-top: 5em;
+    
+}
+th, td {
+padding: auto;
+font-size: 2em;
+background-color: #ffffff;
+opacity: 0.6;
+}
+.images{
+    color: #ffff;
+    font-size: 2em;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.images span{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(150px);
+}
+.images span img{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+}
+.images span:hover img{
+    transform: translateY(-50px) scale(1.2);
+}
